@@ -19,7 +19,7 @@
     <div class="title-box"></div>
     <!-- 登录的div -->
     <div class="login-box">
-      <form class="layui-form" action="">
+      <form class="layui-form" id="form_login">
         <!-- 用户名 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-username"></i>
@@ -44,7 +44,7 @@
     </div>
     <!-- 注册的div -->
     <div class="reg-box">
-      <form class="layui-form" action="">
+      <form class="layui-form" id="form_reg">
         <!-- 用户名 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-username"></i>
@@ -60,7 +60,7 @@
         <!-- 确认密码 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-password"></i>
-          <input type="password" name="repassword" required lay-verify="required" placeholder="再次输入密码"
+          <input type="password" name="repassword" required lay-verify="required|pwd|repwd" placeholder="再次输入密码"
             autocomplete="off" class="layui-input">
         </div>
         <!-- 登录按钮 -->
@@ -76,6 +76,7 @@
   </div>
   <script src="./assets/lib/layui/layui.all.js"></script>
   <script src="./assets/lib/jquery.js"></script>
+  <script src="./assets/js/baseAPI.js"></script>
   <script src="./assets/js/login.js"></script>
 </body>
 
